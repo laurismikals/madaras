@@ -1,0 +1,16 @@
+.border-grid {
+  float: left;
+  width: 100%;
+  position: relative;
+  left: 1px;
+  top: 0;
+  overflow: hidden;
+}
+.border-grid__item {
+  float: left;
+  width: calc(100% + 1px);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--c-border);
+  margin: -1px 0 0 -1px;
+}

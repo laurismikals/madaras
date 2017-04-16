@@ -1,13 +1,12 @@
 let BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin //plugin for analyzing js bundle file. helps to make file size under control by identifying large libraries
 let webpack = require('webpack')
-let path = ''
 
 module.exports = {
   watch: true,
   context: __dirname,
-  entry: './'+path+'app/entry.js', //entry file where the webpack starts looking
+  entry: './app/entry.js', //entry file where the webpack starts looking
   output: {
-    path: __dirname + '/' + path + '/dist', //distribution directory
+    path: __dirname + '/dist', //distribution directory
     filename: "bundle.js" //bundle file name
   },
   debug: true,

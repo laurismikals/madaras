@@ -1,0 +1,70 @@
+/*Helper classes for setting margins*/
+/*For setting bottom margin use these instead of setting default bottom margin on component level. That is because*/
+/*in different situations component can have different bottom margins.*/
+/*Also never use margin top to separate components vertically. This is how vertical margins will stay consistent when component is removed*/
+.bottom-margin--1 {
+  margin-bottom: 1px;
+}
+.bottom-margin--2 {
+  margin-bottom: 2px;
+}
+.bottom-margin--3 {
+  margin-bottom: 3px;
+}
+.bottom-margin--4 {
+  margin-bottom: 4px;
+}
+.bottom-margin--5 {
+  margin-bottom: 5px;
+}
+.bottom-margin--6 {
+  margin-bottom: 6px;
+}
+.bottom-margin--7 {
+  margin-bottom: 7px;
+}
+.bottom-margin--8 {
+  margin-bottom: 8px;
+}
+.bottom-margin--9 {
+  margin-bottom: 9px;
+}
+.bottom-margin--10 {
+  margin-bottom: 10px;
+}
+.bottom-margin--15 {
+  margin-bottom: 15px;
+}
+.bottom-margin--20 {
+  margin-bottom: 20px;
+}
+.bottom-margin--30 {
+  margin-bottom: 30px;
+}
+.bottom-margin--40 {
+  margin-bottom: 40px;
+}
+.bottom-margin--50 {
+  margin-bottom: 50px;
+}
+.bottom-margin--60 {
+  margin-bottom: 60px;
+}
+.bottom-margin--70 {
+  margin-bottom: 70px;
+}
+.bottom-margin--80 {
+  margin-bottom: 80px;
+}
+.bottom-margin--90 {
+  margin-bottom: 90px;
+}
+.bottom-margin--100 {
+  margin-bottom: 100px;
+}
+.right-margin--10 {
+  margin-right: 10px;
+}
+.right-margin--30 {
+  margin-right: 30px;
+}

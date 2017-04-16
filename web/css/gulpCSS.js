@@ -24,8 +24,9 @@ let cssSrc = [
   `${cssPath}/04-objects/*.css`,
   `${viewsPath}/00-atoms/*/*.css`,
   `${viewsPath}/01-molecules/*/*.css`,
-  `${viewsPath}/02-organisms/*/*.css`,
-  `${viewsPath}/04-pages/*/*.css`,
+  `${viewsPath}/02-cells/*/*.css`,
+  `${viewsPath}/03-organisms/*/*.css`,
+  `${viewsPath}/05-pages/*/*.css`,
   `${cssPath}/05-trumps/*.css`,
   `${cssPath}/06-shame/*.css`
 ]

@@ -2,23 +2,13 @@ import React, {Component} from 'react'
 import {
   HashRouter as Router,
   Route,
-  Link
 } from 'react-router-dom'
 
-import PageLake from '../05-pages/lake'
-import PageContacts from '../05-pages/contacts'
-
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
+import HeaderMain from '../03-organisms/header-main/header-main'
+import Home from '../05-pages/home'
+import Lake from '../05-pages/lake'
+import Services from '../05-pages/services'
+import Contacts from '../05-pages/contacts'
 
 export default class Layout extends Component {
   constructor(props) {
@@ -27,28 +17,38 @@ export default class Layout extends Component {
 
 
   render() {
+    const {home, lake, contacts, services} = data
+
     return (
       <Router>
       <div className="site__layout-wrap">
+        <HeaderMain/>
         <main id="main">
-          <header>
-            <Link to="/">
-              Home
-            </Link>
-            <Link to="about">
-              About
-            </Link>
-            <Link to="lake">
-              Ezers
-            </Link>
-            <Link to="contacts">
-              Kontakti
-            </Link>
-          </header>
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/lake" component={PageLake}/>
-          <Route path="/contacts" component={PageContacts}/>
+          <Route exact path="/" render={(routerProps) => (
+            <Home
+              data={home}
+              {...routerProps}
+            />
+          )}/>
+          <Route exact path="/lake" render={(routerProps) => (
+            <Lake
+              data={lake}
+              {...routerProps}
+            />
+          )}/>
+          <Route exact path="/services" render={(routerProps) => (
+            <Services
+              data={services}
+              {...routerProps}
+            />
+          )}/>
+          <Route exact path="/contacts" render={(routerProps) => (
+            <Contacts
+              data={contacts}
+              {...routerProps}
+            />
+          )}/>
+
         </main>
       </div>
       </Router>

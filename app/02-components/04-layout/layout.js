@@ -5,52 +5,58 @@ import {
 } from 'react-router-dom'
 
 import HeaderMain from '../03-organisms/header-main/header-main'
-import Home from '../05-pages/home'
-import Lake from '../05-pages/lake'
-import Services from '../05-pages/services'
-import Contacts from '../05-pages/contacts'
+import home from '../05-pages/home'
+import lake from '../05-pages/lake'
+import services from '../05-pages/services'
+import contacts from '../05-pages/contacts'
+
+
+const renderMergedProps = (component, ...rest) => {
+  const finalProps = Object.assign({}, ...rest)
+  return (
+    React.createElement(component, finalProps)
+  )
+}
+
+const PropsRoute = ({ component, ...rest }) => {
+  return (
+    <Route exact {...rest} render={routeProps => {
+      return renderMergedProps(component, routeProps, rest)
+    }}/>
+  )
+}
 
 export default class Layout extends Component {
   constructor(props) {
     super(props)
+
+    this.html = document.querySelector('html')
+    this.lang = this.html.getAttribute('lang')
+
+    this.home = home
+    this.lake = lake
+    this.services = services
+    this.contacts = contacts
   }
 
-
   render() {
-    const {home, lake, contacts, services} = data
-
     return (
       <Router>
-      <div className="site__layout-wrap">
-        <HeaderMain/>
-        <main id="main">
-          <Route exact path="/" render={(routerProps) => (
-            <Home
-              data={home}
-              {...routerProps}
-            />
-          )}/>
-          <Route exact path="/lake" render={(routerProps) => (
-            <Lake
-              data={lake}
-              {...routerProps}
-            />
-          )}/>
-          <Route exact path="/services" render={(routerProps) => (
-            <Services
-              data={services}
-              {...routerProps}
-            />
-          )}/>
-          <Route exact path="/contacts" render={(routerProps) => (
-            <Contacts
-              data={contacts}
-              {...routerProps}
-            />
-          )}/>
-
-        </main>
-      </div>
+        <div className="site__layout-wrap">
+          <HeaderMain lang={this.lang}/>
+          <main id="main">
+            {Object.keys(data).map((page, i) => {
+              return(
+                <PropsRoute
+                  component={this[page]}
+                  key={i}
+                  path={page === "home" ? "/:language/" : `/:lang/${page}`}
+                  data={data[page]}
+                />
+              )
+            })}
+          </main>
+        </div>
       </Router>
     )
   }

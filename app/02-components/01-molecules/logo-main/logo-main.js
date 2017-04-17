@@ -10,7 +10,10 @@ export default class LogoMain extends Component {
 
   render(){
     return(
-      <NavLink to="/" className="logo-main">
+      <NavLink
+        to={`/${this.props.lang}/`}
+        className="logo-main"
+      >
         <span className="logo-main__icon">
           <Icon
             icon="fish"

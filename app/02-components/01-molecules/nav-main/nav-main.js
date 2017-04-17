@@ -7,36 +7,26 @@ export default class NavMain extends Component {
   }
 
   render(){
+    const {lang} = this.props
+
     return(
       <nav className="nav-main">
         <ul className="nav-main__list">
-          <li className="nav-main__item">
-            <NavLink
-              to="/lake"
-              activeClassName="active"
-              className="nav-main__link"
-            >
-              Kāla ezers
-            </NavLink>
-          </li>
-          <li className="nav-main__item">
-            <NavLink
-              to="/services"
-              activeClassName="active"
-              className="nav-main__link"
-            >
-              Pakalpojumi
-            </NavLink>
-          </li>
-          <li className="nav-main__item">
-            <NavLink
-              to="/contacts"
-              activeClassName="active"
-              className="nav-main__link"
-            >
-              Kontakti
-            </NavLink>
-          </li>
+          {Object.keys(data).map((page, i) => {
+            if(page !== "home"){
+              return(
+                <li key={i} className="nav-main__item">
+                  <NavLink
+                    to={`/${lang}/${page}`}
+                    activeClassName="active"
+                    className="nav-main__link"
+                  >
+                    {data[page].heading[lang]}
+                  </NavLink>
+                </li>
+              )
+            }
+          })}
         </ul>
       </nav>
     )

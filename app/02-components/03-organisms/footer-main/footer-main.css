@@ -1,0 +1,6 @@
+.footer-main{
+  float:left;
+  width: 100%;
+  height: 70px;
+  background-color: var(--c-main);
+}

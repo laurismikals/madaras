@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 
 import HeaderMain from '../03-organisms/header-main/header-main'
+import FooterMain from '../03-organisms/footer-main/footer-main'
 import home from '../05-pages/home'
 import lake from '../05-pages/lake'
 import services from '../05-pages/services'
@@ -56,6 +57,7 @@ export default class Layout extends Component {
               )
             })}
           </main>
+          <FooterMain/>
         </div>
       </Router>
     )

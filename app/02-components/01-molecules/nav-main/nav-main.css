@@ -1,8 +1,16 @@
 .nav-main{
-
+  float:left;
+  width: 100%;
 }
 .nav-main__list{
   list-style: none;
 }
-.nav-main__item{}
-.nav-main__link{}
+.nav-main__item{
+  float:left;
+  width: 100%;
+}
+.nav-main__link{
+  float:left;
+  width: 100%;
+  color:var(--c-main);
+}

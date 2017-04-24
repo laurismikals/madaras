@@ -4,6 +4,7 @@ import UniqueIds from 'react-html-id' //lib that generates unique ids
 import LogoMain from '../../01-molecules/logo-main/logo-main'
 import NavMain from '../../01-molecules/nav-main/nav-main'
 import Burger from '../../00-atoms/burger/burger'
+import DrawerHeader from '../../02-cells/drawer-header/drawer-header'
 
 export default class HeaderMain extends Component {
   constructor(props) {
@@ -33,13 +34,12 @@ export default class HeaderMain extends Component {
               onClick={() => this.toggleNav()}
               id={lastId}
             />
-            <div
-              className="header-main__drawer"
+            <DrawerHeader
               id={lastId}
-              aria-hidden={!this.state.navOpened}
+              isVisible={!this.state.navOpened}
             >
               <NavMain lang={this.props.lang}/>
-            </div>
+            </DrawerHeader>
           </div>
         </div>
       </header>

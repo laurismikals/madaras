@@ -2,6 +2,7 @@
 :root {
   /*Main color*/
   --c-main: #505050;
+  --c-main-30: rgba(80, 80, 80, 0.3);
 
   /*Background colors*/
   --c-background: #ffffff;

@@ -40,7 +40,7 @@ let processors = [
   cssnext({browsers: ['last 20 version']}),
   cssnano()
 ]
-let themes = ['base', 'contrast'] //array that holds names of different css themes. this corresponds to css files in css/00-settings/ folder
+let themes = ['base'] //array that holds names of different css themes. this corresponds to css files in css/00-settings/ folder
 let cssTasks = [] //array that will hold css task for every css theme
 
 //function to create css task

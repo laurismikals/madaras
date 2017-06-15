@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {
-  HashRouter as Router,
   Route,
+  Redirect,
 } from 'react-router-dom'
 
 import HeaderMain from '../03-organisms/header-main/header-main'
@@ -31,6 +31,10 @@ export default class Layout extends Component {
   constructor(props) {
     super(props)
 
+    // this.state = {
+    //   redirect: false
+    // }
+
     this.html = document.querySelector('html')
     this.lang = this.html.getAttribute('lang')
 
@@ -42,24 +46,25 @@ export default class Layout extends Component {
 
   render() {
     return (
-      <Router>
-        <div className="site__layout-wrap">
-          <HeaderMain lang={this.lang}/>
-          <main id="main">
-            {Object.keys(data).map((page, i) => {
-              return(
-                <PropsRoute
-                  component={this[page]}
-                  key={i}
-                  path={page === "home" ? "/:language/" : `/:lang/${page}`}
-                  data={data[page]}
-                />
-              )
-            })}
-          </main>
-          <FooterMain/>
-        </div>
-      </Router>
+      <div className="site__layout-wrap">
+        <HeaderMain lang={this.lang}/>
+        <main id="main">
+          {Object.keys(data).map((page, i) => {
+            return(
+              <PropsRoute
+                component={this[page]}
+                key={i}
+                path={page === "home" ? `/:${this.lang}/` : `/:lang/${page}`}
+                data={data[page]}
+              />
+            )
+          })}
+        </main>
+        <FooterMain/>
+        <Redirect to={{
+          pathname: `/${this.lang}/`
+        }}/>
+      </div>
     )
   }
 }

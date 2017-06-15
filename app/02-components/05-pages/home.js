@@ -7,10 +7,11 @@ export default class Home extends Component {
 
   render(){
     return(
-      <div className="container">
-        Mājas
+      <div className="width-100">
+        <div className="container">
+          Mājas
+        </div>
       </div>
-
     )
   }
 }

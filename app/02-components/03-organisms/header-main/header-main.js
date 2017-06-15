@@ -37,6 +37,7 @@ export default class HeaderMain extends Component {
             <DrawerHeader
               id={lastId}
               isVisible={!this.state.navOpened}
+              onClose={() => this.toggleNav()}
             >
               <NavMain lang={this.props.lang}/>
             </DrawerHeader>

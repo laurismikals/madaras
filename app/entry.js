@@ -1,14 +1,14 @@
-import React from 'react'
-import { render } from 'react-dom'
-import {
-  HashRouter as Router,
-} from 'react-router-dom'
+let React = require('react')
+let { render } = require('react-dom')
+let {HashRouter} = require('react-router-dom')
 
-import Layout from './02-components/04-layout/layout'
+let Layout = React.createFactory(require('./02-components/04-layout/layout').Layout)
+
+let mountNode = document.getElementById('app')
 
 render(
-  <Router>
+  <HashRouter>
     <Layout />
-  </Router>
-  , document.getElementById('app')
+  </HashRouter>
+  , mountNode
 )

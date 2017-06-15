@@ -1,10 +1,6 @@
-import React, {Component} from 'react'
+let React = require('react')
 
-export default class HeaderMain extends Component {
-  constructor(props) {
-    super(props)
-  }
-
+class Burger extends React.Component {
   render(){
     return(
       <button
@@ -25,3 +21,5 @@ export default class HeaderMain extends Component {
     )
   }
 }
+
+module.exports = Burger

@@ -1,4 +1,4 @@
 .idea/
 node_modules/
-web/placeholders/
-dist/
+public/placeholders/
+public/dist/

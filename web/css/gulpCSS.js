@@ -11,7 +11,7 @@ let cssForLoop = require('postcss-for')
 let cssMath = require('postcss-math')
 let browserSync = require('browser-sync').create()
 
-let dist = `./dist` //path to distribution folder
+let dist = `./public/dist` //path to distribution folder
 let cssPath = `web/css` //path to css folder
 let viewsPath = `app/02-components` //path to views folder
 //all the CSS files that gulp watches

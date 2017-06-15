@@ -1,11 +1,12 @@
 //component for displaying simple monochrome icons. for example used into button component and main navigation
 
-import React from 'react'
-import svg4everybody from 'svg4everybody'
+let React = require('react')
+let svg4everybody = require('svg4everybody')
 
-svg4everybody() //plugin adds svg "sprite" support to IE
-
-export default class Icon extends React.Component {
+class Icon extends React.Component {
+  componentDidMount(){
+    svg4everybody() //plugin adds svg "sprite" support to IE
+  }
   render() {
     return (
       <svg className={`icon ${this.props.className ? this.props.className : null}`}>
@@ -17,3 +18,5 @@ export default class Icon extends React.Component {
     )
   }
 }
+
+module.exports = Icon

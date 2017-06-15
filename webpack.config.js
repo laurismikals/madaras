@@ -6,7 +6,7 @@ module.exports = {
   context: __dirname,
   entry: './app/entry.js', //entry file where the webpack starts looking
   output: {
-    path: __dirname + '/dist', //distribution directory
+    path: __dirname + '/public/dist', //distribution directory
     filename: "bundle.js" //bundle file name
   },
   debug: true,

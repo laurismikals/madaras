@@ -1,70 +1,73 @@
-import React, {Component} from 'react'
-import {
-  Route,
-  Redirect,
-} from 'react-router-dom'
+let React = require('react')
+let {Route, Redirect} = require('react-router-dom')
 
-import HeaderMain from '../03-organisms/header-main/header-main'
-import FooterMain from '../03-organisms/footer-main/footer-main'
-import home from '../05-pages/home'
-import lake from '../05-pages/lake'
-import services from '../05-pages/services'
-import contacts from '../05-pages/contacts'
+let HeaderMain = require('../03-organisms/header-main/header-main')
+let FooterMain = require('../03-organisms/footer-main/footer-main')
+let home = require('../05-pages/home')
+let lake = require('../05-pages/lake')
+let services = require('../05-pages/services')
+let contacts = require('../05-pages/contacts')
 
 
-const renderMergedProps = (component, ...rest) => {
-  const finalProps = Object.assign({}, ...rest)
-  return (
-    React.createElement(component, finalProps)
-  )
-}
+// const renderMergedProps = (component, ...rest) => {
+//   const finalProps = Object.assign({}, ...rest)
+//   return (
+//     React.createElement(component, finalProps)
+//   )
+// }
+//
+// const PropsRoute = ({ component, ...rest }) => {
+//   return (
+//     <Route exact {...rest} render={routeProps => {
+//       return renderMergedProps(component, routeProps, rest)
+//     }}/>
+//   )
+// }
 
-const PropsRoute = ({ component, ...rest }) => {
-  return (
-    <Route exact {...rest} render={routeProps => {
-      return renderMergedProps(component, routeProps, rest)
-    }}/>
-  )
-}
-
-export default class Layout extends Component {
+class Layout extends React.Component {
   constructor(props) {
     super(props)
 
-    // this.state = {
-    //   redirect: false
-    // }
+    this.state = {
+      redirect: false
+    }
 
-    this.html = document.querySelector('html')
-    this.lang = this.html.getAttribute('lang')
+    if(typeof document !== "undefined"){
+      this.html = document.querySelector('html')
+      this.lang = this.html.getAttribute('lang')
+    }
 
     this.home = home
     this.lake = lake
     this.services = services
     this.contacts = contacts
   }
-
   render() {
     return (
       <div className="site__layout-wrap">
         <HeaderMain lang={this.lang}/>
         <main id="main">
-          {Object.keys(data).map((page, i) => {
-            return(
-              <PropsRoute
-                component={this[page]}
-                key={i}
-                path={page === "home" ? `/:${this.lang}/` : `/:lang/${page}`}
-                data={data[page]}
-              />
-            )
-          })}
+          {/*<Route exact {...rest} render={routeProps => {*/}
+            {/*return renderMergedProps(component, routeProps, rest)*/}
+          {/*}}/>*/}
+          {/*{Object.keys(data).map((page, i) => {*/}
+            {/*return(*/}
+              {/*<PropsRoute*/}
+                {/*component={this[page]}*/}
+                {/*key={i}*/}
+                {/*path={page === "home" ? `/:${this.lang}/` : `/:lang/${page}`}*/}
+                {/*data={data[page]}*/}
+              {/*/>*/}
+            {/*)*/}
+          {/*})}*/}
         </main>
         <FooterMain/>
-        <Redirect to={{
-          pathname: `/${this.lang}/`
-        }}/>
+        {/*<Redirect to={{*/}
+          {/*pathname: `/${this.lang}/`*/}
+        {/*}}/>*/}
       </div>
     )
   }
 }
+
+module.exports.Layout = Layout

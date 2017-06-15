@@ -1,37 +1,31 @@
-var http = require("http"),
-  url = require("url"),
-  path = require("path"),
-  fs = require("fs"),
-  port = process.argv[2] || 8888;
+let express = require('express')
+let path = require('path')
+let port = 8888
 
-http.createServer(function(request, response) {
+let app = express()
 
-  var uri = url.parse(request.url).pathname
-    , filename = path.join(process.cwd(), uri);
+require('node-jsx').install()
 
-  fs.exists(filename, function(exists) {
-    if(!exists) {
-      response.writeHead(404, {"Content-Type": "text/plain"});
-      response.write("404 Not Found\n");
-      response.end();
-      return;
-    }
+let bodyParser = require('body-parser')
 
-    if (fs.statSync(filename).isDirectory()) filename += '/index.html';
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 
-    fs.readFile(filename, "binary", function(err, file) {
-      if(err) {
-        response.writeHead(500, {"Content-Type": "text/plain"});
-        response.write(err + "\n");
-        response.end();
-        return;
-      }
+app.use(express.static(path.join(__dirname, 'public')))
 
-      response.writeHead(200);
-      response.write(file, "binary");
-      response.end();
-    });
-  });
-}).listen(parseInt(port, 10));
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 
-console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+require('./app/03-routes/routes.js')(app)
+
+app.get('*', function(req, res){
+  res.json({
+    "route": "Sorry this page does not exist!"
+  })
+})
+
+app.listen(port)
+
+console.log(`Server is running on port ${port}`)

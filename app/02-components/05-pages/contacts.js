@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+let React = require('react')
 
-export default class Contacts extends Component {
+class Contacts extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -41,3 +41,5 @@ export default class Contacts extends Component {
     )
   }
 }
+
+module.exports = Contacts

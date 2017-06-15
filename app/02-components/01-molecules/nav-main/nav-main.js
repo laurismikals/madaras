@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import { NavLink } from 'react-router-dom'
+let React = require('react')
+let { NavLink } = require('react-router-dom')
 
-export default class NavMain extends Component {
+class NavMain extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -32,3 +32,5 @@ export default class NavMain extends Component {
     )
   }
 }
+
+module.exports = NavMain

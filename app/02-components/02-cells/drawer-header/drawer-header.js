@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+let React = require('react')
 
-export default class DrawerHeader extends Component {
+class DrawerHeader extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -23,3 +23,5 @@ export default class DrawerHeader extends Component {
     )
   }
 }
+
+module.exports = DrawerHeader

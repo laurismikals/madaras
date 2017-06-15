@@ -1,12 +1,12 @@
-import React, {Component} from 'react'
-import UniqueIds from 'react-html-id' //lib that generates unique ids
+let React = require('react')
+let UniqueIds = require('react-html-id') //lib that generates unique ids
 
-import LogoMain from '../../01-molecules/logo-main/logo-main'
-import NavMain from '../../01-molecules/nav-main/nav-main'
-import Burger from '../../00-atoms/burger/burger'
-import DrawerHeader from '../../02-cells/drawer-header/drawer-header'
+let LogoMain = require('../../01-molecules/logo-main/logo-main')
+let NavMain = require('../../01-molecules/nav-main/nav-main')
+let Burger = require('../../00-atoms/burger/burger')
+let DrawerHeader = require('../../02-cells/drawer-header/drawer-header')
 
-export default class HeaderMain extends Component {
+class HeaderMain extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -47,3 +47,5 @@ export default class HeaderMain extends Component {
     )
   }
 }
+
+module.exports = HeaderMain

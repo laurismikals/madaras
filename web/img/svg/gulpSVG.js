@@ -8,7 +8,7 @@ let svgSprite = require('gulp-svg-sprite')
 //task for creating SVG icon sprite. this task will create icon-sprite.svg file and it will icon font.
 // icon sprite is used in the browsers which support it. icon font is used for the fallback.
 
-let dist = `./dist` //path to distribution folder
+let dist = `./public/dist` //path to distribution folder
 let pathImg = `web/img/`//path to image folder
 
 // this task minifies all the icons and copies them into "icons-minified" folder

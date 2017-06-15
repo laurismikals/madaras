@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
-import { NavLink } from 'react-router-dom'
+let React = require('react')
+let { NavLink } = require('react-router-dom')
 
-import Icon from '../../00-atoms/icon/icon'
+let Icon = require('../../00-atoms/icon/icon')
 
-export default class LogoMain extends Component {
+class LogoMain extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -25,3 +25,5 @@ export default class LogoMain extends Component {
     )
   }
 }
+
+module.exports = LogoMain

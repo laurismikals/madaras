@@ -6,7 +6,7 @@ let uglify = require('gulp-uglify')
 let requireDir = require('require-dir')
 
 let path = '' //path to frontend root
-let dist = `./dist` //path to distribution folder
+let dist = `./public/dist` //path to distribution folder
 
 //server for reloading page in every browser where the project is opened
 gulp.task('browser-sync', () => {

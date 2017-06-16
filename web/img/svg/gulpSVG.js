@@ -2,8 +2,6 @@ let gulp = require('gulp')
 let svgmin = require('gulp-svgmin')
 let svgSprite = require('gulp-svg-sprite')
 
-
-
 //SVG
 //task for creating SVG icon sprite. this task will create icon-sprite.svg file and it will icon font.
 // icon sprite is used in the browsers which support it. icon font is used for the fallback.

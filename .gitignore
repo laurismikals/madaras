@@ -1,4 +1,5 @@
-.idea/
-node_modules/
-public/placeholders/
-public/dist/
+node_modules
+.idea
+dist
+.DS_Store
+npm-debug.log

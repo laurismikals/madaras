@@ -9,11 +9,10 @@ let cssnext = require('postcss-cssnext')
 let cssnano = require('cssnano')
 let cssForLoop = require('postcss-for')
 let cssMath = require('postcss-math')
-let browserSync = require('browser-sync').create()
 
 let dist = `./public/dist` //path to distribution folder
 let cssPath = `web/css` //path to css folder
-let viewsPath = `app/02-components` //path to views folder
+let viewsPath = `app/shared` //path to views folder
 //all the CSS files that gulp watches
 //in the project we use ITCSS and Atomic design architecture, therefor css source order is important
 let cssSrc = [
@@ -54,7 +53,6 @@ let createTask = (theme, cssSrc) => {
       .pipe(rename(`bundle-${theme}-min.css`))
       .pipe(postcss(processors))
       .pipe(gulp.dest(dist))
-      .pipe(browserSync.stream())
   })
 }
 

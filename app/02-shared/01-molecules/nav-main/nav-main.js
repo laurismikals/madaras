@@ -7,7 +7,7 @@ export default class NavMain extends Component {
   }
 
   render(){
-    const {lang, data} = this.props
+    const {lang, data, onClick} = this.props
 
     return(
       <nav className="nav-main">
@@ -20,6 +20,7 @@ export default class NavMain extends Component {
                     to={`/${lang}/${page}`}
                     activeClassName="active"
                     className="nav-main__link"
+                    onClick={onClick}
                   >
                     {data[page].heading[lang]}
                   </NavLink>

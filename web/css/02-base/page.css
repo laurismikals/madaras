@@ -23,7 +23,7 @@ body.is-nav-opened{
   padding-top: 90px;
   transition: padding-top 0.3s;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 601px) {
   .site__layout-wrap {
     padding-top: 130px;
   }

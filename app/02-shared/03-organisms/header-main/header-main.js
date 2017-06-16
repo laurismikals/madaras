@@ -20,6 +20,12 @@ export default class HeaderMain extends Component {
       navOpened: !this.state.navOpened
     })
   }
+  routeChangeHandler(){
+    this.setState({
+      navOpened: false
+    })
+    window.scrollTo(0, 0)
+  }
   render(){
     const {data, lang} = this.props
     const {navOpened} = this.state
@@ -41,7 +47,7 @@ export default class HeaderMain extends Component {
               isVisible={!navOpened}
               onClose={() => this.toggleNav()}
             >
-              <NavMain lang={lang} data={data}/>
+              <NavMain lang={lang} data={data} onClick={() => this.routeChangeHandler()}/>
             </DrawerHeader>
           </div>
         </div>

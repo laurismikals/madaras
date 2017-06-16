@@ -10,9 +10,9 @@ let cssnano = require('cssnano')
 let cssForLoop = require('postcss-for')
 let cssMath = require('postcss-math')
 
-let dist = `./public/dist` //path to distribution folder
+let dist = `./static/dist` //path to distribution folder
 let cssPath = `web/css` //path to css folder
-let viewsPath = `app/shared` //path to views folder
+let viewsPath = `app/02-shared` //path to views folder
 //all the CSS files that gulp watches
 //in the project we use ITCSS and Atomic design architecture, therefor css source order is important
 let cssSrc = [

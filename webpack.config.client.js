@@ -1,12 +1,12 @@
 const path = require('path');
 const srcPath = path.resolve(__dirname, 'app');
-const distPath = path.resolve(__dirname, 'public/dist');
+const distPath = path.resolve(__dirname, 'static/dist');
 
 module.exports = {
   context: srcPath,
   target: 'web',
 
-  entry: './client/index.js',
+  entry: './03-client/index.js',
   output: {
     path: distPath,
     filename: 'client.js',

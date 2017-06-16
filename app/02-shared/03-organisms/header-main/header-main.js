@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import UniqueIds from 'react-html-id' //lib that generates unique ids
+import ReactHtmlId from '../../../01-helpers/react-html-id'
 
 import LogoMain from '../../01-molecules/logo-main/logo-main'
 import NavMain from '../../01-molecules/nav-main/nav-main'
@@ -13,7 +13,7 @@ export default class HeaderMain extends Component {
       navOpened: false
     }
 
-    UniqueIds.enableUniqueIds(this) //init unique ids
+    ReactHtmlId.enableUniqueIds(this) //init unique ids
   }
   toggleNav(){
     this.setState({
@@ -21,7 +21,8 @@ export default class HeaderMain extends Component {
     })
   }
   render(){
-    const {data} = this.props
+    const {data, lang} = this.props
+    const {navOpened} = this.state
     const nextId = this.nextUniqueId() //generates new unique id
     const lastId = this.lastUniqueId() //accesses previous generated unique id. in this context id's are used to link label with input field
 
@@ -29,18 +30,18 @@ export default class HeaderMain extends Component {
       <header className="header-main">
         <div className="container header-main__container">
           <div className="header-main__flex">
-            <LogoMain lang={this.props.lang}/>
+            <LogoMain lang={lang}/>
             <Burger
-              navOpened={this.state.navOpened}
+              navOpened={navOpened}
               onClick={() => this.toggleNav()}
               id={lastId}
             />
             <DrawerHeader
               id={lastId}
-              isVisible={!this.state.navOpened}
+              isVisible={!navOpened}
               onClose={() => this.toggleNav()}
             >
-              <NavMain lang={this.props.lang} data={data}/>
+              <NavMain lang={lang} data={data}/>
             </DrawerHeader>
           </div>
         </div>

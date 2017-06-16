@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Route, Redirect} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 import HeaderMain from '../03-organisms/header-main/header-main'
 import FooterMain from '../03-organisms/footer-main/footer-main'
@@ -93,7 +93,6 @@ export default class Layout extends Component {
     super(props)
 
     this.state = {
-      redirect: false,
       lang: 'lv'
     }
 
@@ -104,6 +103,7 @@ export default class Layout extends Component {
   }
   render() {
     const {lang} = this.state
+
     return (
       <div className="site__layout-wrap">
         <HeaderMain lang={lang} data={data}/>
@@ -120,9 +120,6 @@ export default class Layout extends Component {
           })}
         </main>
         <FooterMain/>
-        {/*<Redirect to={{*/}
-        {/*pathname: `/${this.lang}/`*/}
-        {/*}}/>*/}
       </div>
     )
   }

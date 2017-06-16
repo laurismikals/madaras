@@ -1,11 +1,11 @@
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 const srcPath = path.resolve(__dirname, 'app');
-const distPath = path.resolve(__dirname, 'public/dist');
+const distPath = path.resolve(__dirname, 'static/dist');
 
 module.exports = {
     context: srcPath,
-    entry: './server/index.js',
+    entry: './04-server/index.js',
     output: {
         path: distPath,
         filename: 'server.js'

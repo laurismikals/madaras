@@ -5,7 +5,7 @@
 .nav-main__list{
   list-style: none;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 601px) {
   .nav-main__list{
     display: flex;
   }
@@ -14,7 +14,7 @@
   float:left;
   width: 100%;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 601px) {
   .nav-main__item{
     width: auto;
   }
@@ -26,7 +26,7 @@
   padding: 10px 20px;
   line-height: 1.3;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 601px) {
   .nav-main__link{
     padding: 10px 0;
     margin-left: 15px;

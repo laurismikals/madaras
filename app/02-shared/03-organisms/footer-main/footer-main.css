@@ -5,4 +5,9 @@
   flex:0 0 70px;
   background-color: var(--c-main);
   margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+.footer-main__text{
+  color:var(--c-white);
 }

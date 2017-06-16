@@ -1,7 +1,7 @@
 import { renderToString } from 'react-dom/server'
 import React from 'react'
 
-import ReactHtmlId from '../01-helpers/react-html-id' //lib that generates unique ids
+import ReactHtmlId from '../01-helpers/react-html-id'
 
 export default (renderMe) => {
   ReactHtmlId.resetUniqueIds()

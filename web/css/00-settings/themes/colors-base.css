@@ -22,8 +22,8 @@
   --c-text-highlight: #981e32;
 
   /*Link colors*/
-  --c-link: #ffe048;
-  --c-link-hover: #ffe048;
+  --c-link: #4887ff;
+  --c-link-hover: #4887ff;
 
   /*Input colors*/
   --c-input-placeholder: #a0a0a0;
@@ -34,7 +34,7 @@
   --c-checkbox-disabled: #bbbbbb;
 
   /*Colors by function*/
-  --c-accent: #981e32;
+  --c-accent: #4887ff;
   --c-positive: #6abe28;
   --c-negative: #d32f2f;
   --c-average: #ff9c00;

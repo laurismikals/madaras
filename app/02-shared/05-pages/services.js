@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 
+import Text from '../00-atoms/text/text'
+
 export default class Services extends Component {
   constructor(props) {
     super(props)
@@ -16,7 +18,11 @@ export default class Services extends Component {
           return(
             <div key={i} className="width-100 bottom-margin--40">
               <h2 className="heading-two width-100 bottom-margin--20">{service.heading}</h2>
-              <div className="text-editor width-100" dangerouslySetInnerHTML={{__html: service.text}}/>
+              <Text
+                className="width-100"
+              >
+                {service.text}
+              </Text>
             </div>
           )
         })}

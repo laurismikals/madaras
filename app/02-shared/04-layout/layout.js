@@ -11,16 +11,17 @@ import contacts from '../05-pages/contacts'
 let data = {
   "home":{
     "heading": {
-      "lv":"Sākums",
-      "en":"Home"
-    }
+      "lv":"'Madaras' - atpūtas parks",
+      "en":"'Madaras' - Recriational park"
+    },
+    "text": "<p><strong>Z/s MADARAS</strong>, ar Eiropas lauksaimniecības fonda lauku attīstībai Latvijas Lauku attīstības programmas 2014.-2020. gadam, pasākuma <strong>„Atbalsts LEADER vietējai attīstībai (sabiedrības virzīta vietējā attīstības stratēģija)”</strong> apakšpasākuma „Darbību īstenošana saskaņā ar sabiedrības virzītas vietējās attīstības stratēģiju” līdzfinansēto projektu Nr.16-05- AL23-A019.2104- 000001 ir attīstījusi lauku tūrisma atpūtas vietu „Madaras” Kāla ezera krastā, piedāvājot jaunus tūrisma pakalpojumus, atjaunojusi guļbūves ēkas daļu, uzsākot alternatīvās (saules) enerģijas izmantošanu saimniecībā.</p><p><a href='https://ec.europa.eu/agriculture/rural-development-2014-2020_lv'>Vairāk informācijas par Eiropas Lauksaimniecības fondu lauku attīstībai pieejams EK tīmekļa vietnē</a></p>"
   },
   "lake": {
     "heading": {
       "lv":"Kāla ezers",
       "en":"Kāla lake"
     },
-    "text": "<p>Kāla ezers ar tā piecām salām atrodas Vidzemes augstienē, Vestienas paugurainē. Kāla ezers ( Kālezers, Vesetas ezers) iekļauts Vestienas aizsargājamo ainavu apvidū. Krasta līnija izrobota (Kuilīšu, Gaiļu, Kāla līcis). Tā platība ir 407 ha, vidējais dziļums ir 5,3 metri, bet maksimālais dziļums – 14,8 metri. Gultne smilšaina, oļaina, vietām dūņaina. Krasti stāvi, ezers ļoti ainavisks.</p><p>Ezerā ir 3 salas un vairākas peldošās sala.</p><p>1927. gadā trīs Kāla ezera salās - Tolkas (16,6 ha), Vistu (1,2 ha) un Lielajā Vestienas (10,5 ha) izveidots botāniskais liegums. 75 % teritorijas jaukti platlapju meži, boreālie meži un purvaini meži. Konstatētas sešas īpaši aizsargājamās un retās augu, piecas putnu un astoņas bezmugurkaulnieku sugas.</p><p>Kāla ezera salas kopš 2004. gada ir Natura 2000 teritorija. Ieteicams dabas liegumu vērot no skaistajiem un pauguriem klātajiem Kāla ezera krastiem un vizinoties ar laivu pa ezeru.</p><p>Kāla ezers ir caurplūdes ezers. Ezerā ietek Miltupīte, vairāki strauti un grāvji. Dienvidrietumos iztek Veseta, tās kopgarums ir 56 km. Ezerā ir ūdens līmeņa svārstības (Laiviņš, 1995.).</p> <p>Ezerā konstatētas vairāk kā 10 dažādu sugu zivis: ķīsis, līdaka, asaris, rauda, plaudis, karpa, līnis, plicis, rudulis, vīķe, ausleja, kā arī vēdzele, akmeņgrauzis, sapals, karūsa, zutis, mailīte.</p><img src='//www.ezeri.lv/database/GetImage?id=4686' alt=''>"
+    "text": "<p>Kāla ezers ar tā piecām salām atrodas Vidzemes augstienē, Vestienas paugurainē. Kāla ezers ( Kālezers, Vesetas ezers) iekļauts Vestienas aizsargājamo ainavu apvidū. Krasta līnija izrobota (Kuilīšu, Gaiļu, Kāla līcis). Tā platība ir 407 ha, vidējais dziļums ir 5,3 metri, bet maksimālais dziļums – 14,8 metri. Gultne smilšaina, oļaina, vietām dūņaina. Krasti stāvi, ezers ļoti ainavisks.</p><p>Ezerā ir 3 salas un vairākas peldošās sala.</p><p>1927. gadā trīs Kāla ezera salās - Tolkas (16,6 ha), Vistu (1,2 ha) un Lielajā Vestienas (10,5 ha) izveidots botāniskais liegums. 75 % teritorijas jaukti platlapju meži, boreālie meži un purvaini meži. Konstatētas sešas īpaši aizsargājamās un retās augu, piecas putnu un astoņas bezmugurkaulnieku sugas.</p><p>Kāla ezera salas kopš 2004. gada ir Natura 2000 teritorija. Ieteicams dabas liegumu vērot no skaistajiem un pauguriem klātajiem Kāla ezera krastiem un vizinoties ar laivu pa ezeru.</p><p>Kāla ezers ir caurplūdes ezers. Ezerā ietek Miltupīte, vairāki strauti un grāvji. Dienvidrietumos iztek Veseta, tās kopgarums ir 56 km. Ezerā ir ūdens līmeņa svārstības (Laiviņš, 1995.).</p> <p>Ezerā konstatētas vairāk kā 10 dažādu sugu zivis: ķīsis, līdaka, asaris, rauda, plaudis, karpa, līnis, plicis, rudulis, vīķe, ausleja, kā arī vēdzele, akmeņgrauzis, sapals, karūsa, zutis, mailīte.</p>"
   },
   "services": {
     "heading": {
@@ -30,7 +31,7 @@ let data = {
     "services": [
       {
         "heading": "Makšķerēšana",
-        "text": "<p>Laivas makšķerniekiem:</p><table><thead><tr><th>Inventārs/pakalpojumi</th><th>1 stunda</th><th>+1 stunda</th><th>1 diena</th><th>Komplektā ietilpst</th></tr></thead><tbody><tr><td>Laiva 365cm</td><td>5,00</td><td>3,00</td><td>15,00</td><td>2 airi +2 vestes</td></tr><tr><td>Laiva 430cm</td><td>5,00</td><td>3,00</td><td>15,00</td><td>2 airi+3 vestes</td></tr></tbody></table><p>Makšķerēšanai Kālezerā nepieciešama licence un derīga makšķerēšanas karte. Makšķerēšanas licences var iegādāties pie ezera esošajās saimniecībās, kā arī:<br><a href='https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134'>https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134</a></p>"
+        "text": "<p>Laivas makšķerniekiem:</p><table><thead><tr><th>Inventārs/pakalpojumi</th><th>1 stunda</th><th>+1 stunda</th><th>1 diena</th><th>Komplektā ietilpst</th></tr></thead><tbody><tr><td>Laiva 365cm</td><td>5,00</td><td>3,00</td><td>15,00</td><td>2 airi +2 vestes</td></tr><tr><td>Laiva 430cm</td><td>5,00</td><td>3,00</td><td>15,00</td><td>2 airi+3 vestes</td></tr></tbody></table><p>Makšķerēšanai Kālezerā nepieciešama licence un derīga makšķerēšanas karte. Makšķerēšanas licences var iegādāties pie ezera esošajās saimniecībās, kā arī: <a href='https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134'>https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134</a></p>"
       },
       {
         "heading": "Atpūta uz ūdens",
@@ -55,12 +56,12 @@ let data = {
       "heading": "Saimnieki",
       "hosts": [
         {
-          "name": "<strong>Saimnieks:</strong> Andris",
+          "name": "<p><strong>Saimnieks:</strong> Andris</p>",
           "email": "andris.spaile@inbox.lv",
           "phone": "+37129180371"
         },
         {
-          "name": "<strong>Saimniece:</strong> Ingūna",
+          "name": "<p><strong>Saimniece:</strong> Ingūna</p>",
           "email": "inguna.spaile@inbox.lv",
           "phone": "+37128815305"
         }

@@ -34,7 +34,7 @@
   position: relative;
 }
 .burger-bar {
-  background-color: var(--c-accent);
+  background-color: var(--c-main);
   width: 100%;
   height: 3px;
   position: relative;
@@ -72,7 +72,7 @@
 .burger[aria-expanded=true] .burger-bar {
 
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 601px) {
   .burger{
     display: none;
   }

@@ -24,12 +24,12 @@ export default (renderMe) => {
         <link rel="preload" href="/static/fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
       
         <!--link to most important favicons-->
-        <!--<link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">-->
-        <!--<link rel="icon" type="image/png" href="/static/favicons/favicon-32x32.png" sizes="32x32">-->
-        <!--<link rel="icon" type="image/png" href="/static/favicons/favicon-16x16.png" sizes="16x16">-->
-        <!--<link rel="manifest" href="/static/favicons/manifest.json">-->
-        <!--<link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#004063">-->
-        <!--<meta name="theme-color" content="#004063">-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/static/favicons/manifest.json">
+        <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#505050">
+        <meta name="theme-color" content="#505050">
       </head>
         <body>
             <div id="app" class="site">${renderToString(renderMe)}</div>

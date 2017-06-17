@@ -17,7 +17,10 @@
   "author": "",
   "license": "",
   "dependencies": {
+    "accept-language": "^3.0.17",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.1",
+    "js-cookie": "^2.1.4",
     "node-fetch": "^1.6.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

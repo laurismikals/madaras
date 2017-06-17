@@ -11,7 +11,7 @@ export default class LogoMain extends Component {
   render(){
     return(
       <NavLink
-        to={`/${this.props.lang}/`}
+        to={`/${this.props.lang}/home`}
         className="logo-main"
       >
         <span className="logo-main__icon">

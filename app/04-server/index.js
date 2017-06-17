@@ -1,4 +1,5 @@
 import express from 'express'
+import compression from 'compression'
 import cookieParser from 'cookie-parser'
 import React from 'react'
 import Layout from '../02-shared/04-layout/layout'
@@ -11,8 +12,10 @@ import getLanguage from '../01-helpers/get-language'
 const languages = ['lv-LV', 'en-GB', 'en-US']
 
 const app = express()
-app.use('/static', express.static('./static'))
+
+app.use(compression())
 app.use(cookieParser())
+app.use('/static', express.static('./static'))
 
 app.get('*', (req, res) => {
   let lang = getLanguage(req, languages)

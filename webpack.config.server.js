@@ -1,7 +1,7 @@
-const nodeExternals = require('webpack-node-externals');
-const path = require('path');
-const srcPath = path.resolve(__dirname, 'app');
-const distPath = path.resolve(__dirname, 'static/dist');
+const nodeExternals = require('webpack-node-externals')
+const path = require('path')
+const srcPath = path.resolve(__dirname, 'app')
+const distPath = path.resolve(__dirname, 'static/dist')
 
 module.exports = {
     context: srcPath,
@@ -30,4 +30,4 @@ module.exports = {
     },
     externals: nodeExternals(),
     devtool: 'source-map'
-};
+}

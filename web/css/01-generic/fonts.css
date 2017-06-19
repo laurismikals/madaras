@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/static/fonts/subset-Roboto-Regular.woff2') format('woff2'),
-  url('/static/fonts/subset-Roboto-Regular.woff') format('woff');
-  font-weight: 300;
+  src: url('/static/fonts/subset-Roboto-Light.woff2') format('woff2'),
+  url('/static/fonts/subset-Roboto-Light.woff') format('woff');
+  font-weight: 100;
   font-style: normal;
   font-display: swap; /*Changes browser behavior to display fallback font straight away */
 }
@@ -11,14 +11,6 @@
   src: url('/static/fonts/subset-Roboto-Bold.woff2') format('woff2'),
   url('/static/fonts/subset-Roboto-Bold.woff') format('woff');
   font-weight: 700;
-  font-style: normal;
-  font-display: swap; /*Changes browser behavior to display fallback font straight away */
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('/static/fonts/subset-Roboto-Light.woff2') format('woff2'),
-  url('/static/fonts/subset-Roboto-Light.woff') format('woff');
-  font-weight: 100;
   font-style: normal;
   font-display: swap; /*Changes browser behavior to display fallback font straight away */
 }

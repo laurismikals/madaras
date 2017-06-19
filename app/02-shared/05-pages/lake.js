@@ -21,7 +21,7 @@ export default class Lake extends Component {
           {text}
         </Text>
         <Image
-          src="//www.ezeri.lv/database/GetImage?id=4686"
+          src="/static/userfiles/kala_karte.png"
           x={972}
           y={928}
           alt="Kāla karte"

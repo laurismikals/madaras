@@ -3,7 +3,7 @@ html {
   font-size: 100%;/*This sets the base font size which is 16px. EM units calculates their value based on this*/
   line-height: 100%;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 100;
   color: var(--c-main);
   background-color: var(--c-background);
 }

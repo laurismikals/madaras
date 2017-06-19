@@ -34,7 +34,7 @@
   list-style: none;
 }
 .text ul li {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 17px;
   line-height: 2.5;
   position: relative;
@@ -56,7 +56,7 @@
   margin: 0 0 15px 0;
 }
 .text ol li {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 17px;
   line-height: 1.5;
   padding: 0 0 10px 0;
@@ -64,7 +64,7 @@
 .text blockquote {
   float: left;
   width: 100%;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 17px;
   line-height: 1.5;
   position: relative;
@@ -98,7 +98,7 @@
   padding: 20px;
   overflow: hidden;
   background-clip: padding-box;
-  font-weight: 300;
+  font-weight: 100;
   text-align: left;
 }
 .text tbody {}
@@ -118,7 +118,7 @@
   padding: 20px;
   overflow: hidden;
   background-clip: padding-box;
-  font-weight: 300;
+  font-weight: 100;
   text-align: left;
 }
 .text img {

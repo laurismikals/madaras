@@ -21,7 +21,7 @@ export default (renderMe) => {
         <link href="/static/dist/bundle-base-min.css" rel="stylesheet" type="text/css">
         
         <!--link to the most important font which gets requested as soon as possible. this decreases possibility of flash of unstyled text.-->
-        <link rel="preload" href="/static/fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/static/fonts/subset-Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
       
         <!--link to most important favicons-->
         <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">

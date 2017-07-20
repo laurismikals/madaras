@@ -34,7 +34,7 @@ let data = {
       "services": [
         {
           "heading": "Makšķerēšana",
-          "text": "<p>Laivas makšķerniekiem:</p><table><thead><tr><th>Inventārs/pakalpojumi</th><th>1 stunda</th><th>+1 stunda</th><th>1 diena</th><th>Komplektā ietilpst</th></tr></thead><tbody><tr><td>Laiva 365cm</td><td>5,00</td><td>3,00</td><td>15,00</td><td>2 airi +2 vestes</td></tr><tr><td>Laiva 430cm</td><td>5,00</td><td>3,00</td><td>15,00</td><td>2 airi+3 vestes</td></tr></tbody></table><p>Makšķerēšanai Kālezerā nepieciešama licence un derīga makšķerēšanas karte. Makšķerēšanas licences var iegādāties pie ezera esošajās saimniecībās, kā arī: <a href='https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134' target='_blank'>https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134</a></p>"
+          "text": "<p>Laivas makšķerniekiem:</p><table><thead><tr><th>Inventārs/pakalpojumi</th><th>1 stunda</th><th>+1 stunda</th><th>1 diena</th><th>Komplektā ietilpst</th></tr></thead><tbody><tr><td>Laiva 365cm</td><td>3,00</td><td>3,00</td><td>15,00</td><td>2 airi +2 vestes</td></tr><tr><td>Laiva 430cm</td><td>3,00</td><td>3,00</td><td>15,00</td><td>2 airi+3 vestes</td></tr></tbody></table><p>Makšķerēšanai Kālezerā nepieciešama licence un derīga makšķerēšanas karte. Makšķerēšanas licences var iegādāties pie ezera esošajās saimniecībās, kā arī: <a href='https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134' target='_blank'>https://www.epakalpojumi.lv/Services/LOMS/Lake.aspx?id=5134</a></p>"
         },
         {
           "heading": "Atpūta uz ūdens",

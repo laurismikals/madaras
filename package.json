@@ -8,7 +8,7 @@
     "start": "node static/dist/server.js",
     "start_windows": "set NODE_ENV=production&&node static/dist/server.js",
     "dev:server": "webpack --config webpack.config.server.js --watch",
-    "dev:client": "webpack --config webpack.config.client.js --watch",
+    "dev:client": "npm install && export NODE_ENV=development|| set NODE_ENV=development&&  webpack --config webpack.config.client.js --watch",
     "dev:start": "nodemon static/dist/server.js --watch static/dist/server.js"
   },
   "repository": {

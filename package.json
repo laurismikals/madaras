@@ -9,7 +9,9 @@
     "start_windows": "set NODE_ENV=production&&node static/dist/server.js",
     "dev:server": "webpack --config webpack.config.server.js --watch",
     "dev:client": "npm install && export NODE_ENV=development|| set NODE_ENV=development&&  webpack --config webpack.config.client.js --watch",
-    "dev:start": "nodemon static/dist/server.js --watch static/dist/server.js"
+    "dev:start": "nodemon static/dist/server.js --watch static/dist/server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,8 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "source-map-support": "^0.4.11",
-    "svg4everybody": "^2.1.8"
+    "svg4everybody": "^2.1.8",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -56,5 +59,6 @@
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^2.8.2",
     "webpack-node-externals": "^1.5.4"
-  }
+  },
+  "snyk": true
 }

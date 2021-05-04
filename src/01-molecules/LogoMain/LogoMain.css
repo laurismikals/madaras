@@ -1,0 +1,35 @@
+.logo-main{
+  float:left;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #505050;
+}
+@media only screen and (min-width: 601px) {
+  .logo-main{
+    font-size: 2em;
+  }
+}
+.logo-main__icon{
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  width: 1.5em;
+  height: 1em;
+}
+.logo-main__symbol{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  margin: auto;
+}
+.logo-main__text{
+  line-height: 1;
+}

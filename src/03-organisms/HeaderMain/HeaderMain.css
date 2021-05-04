@@ -1,0 +1,25 @@
+.header-main{
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+  height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  transition: height 0.3s;
+}
+@media only screen and (min-width: 601px) {
+  .header-main{
+    height: 100px;
+  }
+}
+.header-main__container{
+  height: 100%;
+}
+.header-main__flex{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

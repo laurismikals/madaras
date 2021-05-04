@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install && export NODE_ENV=production|| set NODE_ENV=production&& webpack --config webpack.config.server.js && export NODE_ENV=production|| set NODE_ENV=production&& webpack --config webpack.config.client.js",
+    "build": "npm install && gulp && export NODE_ENV=production|| set NODE_ENV=production&& webpack --config webpack.config.server.js && export NODE_ENV=production|| set NODE_ENV=production&& webpack --config webpack.config.client.js",
     "start": "node static/dist/server.js",
     "start_windows": "set NODE_ENV=production&&node static/dist/server.js",
     "dev:server": "webpack --config webpack.config.server.js --watch",

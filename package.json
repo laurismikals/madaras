@@ -1,60 +1,43 @@
 {
-  "name": "Madaras",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "npm install && export NODE_ENV=production|| set NODE_ENV=production&& webpack --config webpack.config.server.js && export NODE_ENV=production|| set NODE_ENV=production&& webpack --config webpack.config.client.js",
-    "start": "node static/dist/server.js",
-    "start_windows": "set NODE_ENV=production&&node static/dist/server.js",
-    "dev:server": "webpack --config webpack.config.server.js --watch",
-    "dev:client": "npm install && export NODE_ENV=development|| set NODE_ENV=development&&  webpack --config webpack.config.client.js --watch",
-    "dev:start": "nodemon static/dist/server.js --watch static/dist/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
-  "license": "",
+  "name": "madaras",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "accept-language": "^3.0.17",
-    "compression": "^1.6.2",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.14.1",
-    "js-cookie": "^2.1.4",
-    "node-fetch": "^1.6.3",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-lazy-load": "^3.0.12",
-    "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1",
-    "source-map-support": "^0.4.11",
-    "svg4everybody": "^2.1.8"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
-  "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-loader": "^7.0.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "cssnano": "^3.10.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-order": "^1.1.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-svg-sprite": "^1.3.7",
-    "gulp-svgmin": "^1.2.4",
-    "nodemon": "^1.11.0",
-    "postcss-cssnext": "^2.11.0",
-    "postcss-for": "^2.1.1",
-    "postcss-math": "0.0.8",
-    "postcss-nested": "^2.0.2",
-    "require-dir": "^0.3.2",
-    "webpack": "^2.2.1",
-    "webpack-bundle-analyzer": "^2.8.2",
-    "webpack-node-externals": "^1.5.4"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

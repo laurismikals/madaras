@@ -17,8 +17,7 @@ export default (renderMe) => {
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-      
-        <link href="/static/dist/bundle-base-min.css" type="text/css">
+        <link href="/static/dist/bundle-base-min.css" rel="stylesheet" type="text/css">
         
         <!--link to the most important font which gets requested as soon as possible. this decreases possibility of flash of unstyled text.-->
         <link rel="preload" href="/static/fonts/subset-Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>

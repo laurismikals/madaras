@@ -3,6 +3,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const path = require('path')
 const srcPath = path.resolve(__dirname, 'app')
 const distPath = path.resolve(__dirname, 'static/dist')
+const staticPath = path.resolve(__dirname, 'static')
 
 module.exports = {
   context: srcPath,
@@ -12,7 +13,7 @@ module.exports = {
   output: {
     path: distPath,
     filename: 'client.js',
-    publicPath: '/'
+    publicPath: staticPath,
   },
   resolve: {
     modules: ['node_modules', 'app'],

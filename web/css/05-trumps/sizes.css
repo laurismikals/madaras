@@ -1,9 +1,0 @@
-.height-100 {
-  height: 100%;
-}
-.width-100 {
-  /*Equivalent to clearfix hack. In this project everything is floated to avoid side effect of inline blocks.*/
-  /*In order to clear blocks just make the block 100% in width.*/
-  float: left;
-  width: 100%;
-}

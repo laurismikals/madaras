@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Route, Switch, Redirect, useLocation  } from 'react-router-dom';
+import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 
 import { HeaderMain } from '../03-organisms/HeaderMain/HeaderMain';
 import { FooterMain } from '../03-organisms/FooterMain/FooterMain'
@@ -19,21 +19,13 @@ export const Layout = () => {
     <div className="site__layout-wrap">
       <HeaderMain />
       <main id="main">
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/lake">
-            <Lake />
-          </Route>
-          <Route path="/services">
-            <Services />
-          </Route>
-          <Route path="/contacts">
-            <Contacts />
-          </Route>
-          <Redirect to="/" />
-        </Switch>
+        <Routes>
+          <Route path="*" element={<Navigate replace to="/" />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/lake" element={<Lake />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
       </main>
       <FooterMain/>
     </div>

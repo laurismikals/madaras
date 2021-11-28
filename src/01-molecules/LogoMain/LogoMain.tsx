@@ -5,7 +5,7 @@ import './LogoMain.css';
 
 export const LogoMain = () => (
   <NavLink
-    to="/home"
+    to="/"
     className="logo-main"
   >
     <span className="logo-main__icon">

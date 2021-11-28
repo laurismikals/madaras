@@ -21,9 +21,8 @@ export const NavMain = ({ onClick }: NavMainProps) =>(
         <li key={url} className="nav-main__item">
           <NavLink
             to={url}
-            exact
-            activeClassName="active"
-            className="nav-main__link"
+            end
+            className={({ isActive }) => `nav-main__link ${isActive ? " active" : ""}`}
             onClick={onClick}
           >
             {heading}

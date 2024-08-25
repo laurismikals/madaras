@@ -1,14 +1,15 @@
-import React, { FC } from 'react';
+import React, { ReactNode } from 'react';
 
 import './DrawerHeader.css';
 
 interface DrawerHeaderProps {
+  children: ReactNode;
   id: string;
   isVisible: boolean;
   onClose: () => void;
 }
 
-export const DrawerHeader: FC<DrawerHeaderProps> = ({ children, id, isVisible, onClose }) => (
+export const DrawerHeader = ({ children, id, isVisible, onClose }: DrawerHeaderProps) => (
   <div
     className="drawer-header"
     id={id}

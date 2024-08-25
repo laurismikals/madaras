@@ -21,7 +21,7 @@ export const data = {
         },
         {
           "heading": "Naktsmītnes",
-          "text": "<table><thead><tr><th>Inventārs/pakalpojumi</th><th>1 diennakts</th><th>Komplektā ietilpst</th></tr></thead><tbody><tr><td>Tel&scaron;u vieta</td><td>5,00</td><td>Elektrības pieslēguma vieta</td></tr><tr><td><p>Ugunskura vieta</p></td><td>5,00</td><td>Malka</td></tr><tr><td>Brīvdienu māja</td><td>150,00</td><td>8 gultasvietas, virtuve, kamīns, du&scaron;a, WC</td></tr><tr><td>papildus gultasvieta</td><td>10,00</td><td></td></tr><tr><td>Kempera pieslēguma vieta</td><td>20,00</td><td></td></tr></tbody></table>"
+          "text": "<table><thead><tr><th>Inventārs/pakalpojumi</th><th>1 diennakts</th><th>Komplektā ietilpst</th></tr></thead><tbody><tr><td>Tel&scaron;u vieta</td><td>5,00</td><td>Elektrības pieslēguma vieta</td></tr><tr><td><p>Ugunskura vieta</p></td><td>5,00</td><td>Malka</td></tr><tr><td>Kempera pieslēguma vieta</td><td>20,00</td><td></td></tr></tbody></table>"
         }
       ]
     },
